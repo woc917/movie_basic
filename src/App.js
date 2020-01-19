@@ -20,7 +20,30 @@ minus = () => {
   this.setState(current => ({count: current.count - 1 }));
 }
 
+componentDidMount() {
+  console.log("componentDidMount");
+}
+
+componentDidUpdate() {
+  console.log("componentDidUpdate");
+}
+
+componentWillMount() {
+  console.log("componentWillMount");
+}
+
+componentDidCatch() {
+  console.log("componentDidCatch");
+}
+
+componentWillUpdate() {
+  console.log("componentWillUpdate");
+}
+
   render() {
+
+    console.log("rendering");
+
     return (
       <div className="App">
         <h1>The number is: {this.state.count}</h1>
