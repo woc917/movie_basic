@@ -1,7 +1,12 @@
 import React from 'react'
 
-function Chicken({favourite}) {
-    return <h3>I like {favourite}</h3>;
+function Chicken({favourite, imgsrc}) {
+    return (
+        <div>
+            <h3>{favourite}</h3>
+            <img src={imgsrc} />
+        </div>
+    );
 }
 
 export default Chicken;
