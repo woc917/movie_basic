@@ -13,7 +13,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1>Hellow World!</h1>
-        <Chicken/>
+        <Chicken favourite="chicken" />
+        <Chicken favourite="beer" />
+        <Chicken favourite="chips" />
       </div>
     )
   }
