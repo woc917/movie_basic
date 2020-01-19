@@ -1,14 +1,20 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      
-      <h1>Hello World!</h1>
+export default class App extends Component {
 
-    </div>
-  );
+// 라이프 사이클
+
+// 함수선언
+// 상태선언
+
+  render() {
+    return (
+      <div className="App">
+        <h1>Hellow World!</h1>
+      </div>
+    )
+  }
 }
 
-export default App;
+
