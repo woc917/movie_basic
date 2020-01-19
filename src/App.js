@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
+import Chicken from './chicken'
 
 export default class App extends Component {
 
@@ -12,6 +13,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1>Hellow World!</h1>
+        <Chicken/>
       </div>
     )
   }
