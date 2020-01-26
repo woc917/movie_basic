@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
-import Axios from 'axios'
+import Axios from 'axios' // 네트워크 라이브러리
+import Movie from './Movie'
 
 
 export default class App extends Component {
@@ -37,7 +38,13 @@ export default class App extends Component {
           "Loading..."
         ): (
           movies.map(movie => (
-            <h1>{movie.title}</h1>
+            <Movie 
+              id={movie.id}
+              title={movie.title}
+              year={movie.year}
+              summary={movie.summary}
+              poster={movie.medium_cover_image}
+            />
           ))
         )}
         
