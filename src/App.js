@@ -32,24 +32,28 @@ export default class App extends Component {
     const { isLoading, movies } = this.state 
 
     return (
-      <div className="App">
+      <section className="container">
 
         {isLoading ? (
-          "Loading..."
+          <div className="loader">
+            <span>Loading...</span>
+          </div>
         ): (
-          movies.map(movie => (
-            <Movie 
-              id={movie.id}
-              title={movie.title}
-              year={movie.year}
-              summary={movie.summary}
-              poster={movie.medium_cover_image}
-              genres={movie.genres}
-            />
-          ))
+          <div className="movies">
+            {movies.map(movie => (
+              <Movie 
+                id={movie.id}
+                title={movie.title}
+                year={movie.year}
+                summary={movie.summary}
+                poster={movie.medium_cover_image}
+                genres={movie.genres}
+              />
+            ))}
+          </div>
         )}
         
-      </div>
+      </section>
     )
   }
 }
